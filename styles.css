@@ -7,3 +7,44 @@ body{
     
 }
 
+button{
+    height: 2rem;
+    width: 100px;
+    color:beige;
+    background-color: brown;
+    border: 2px solid black;
+    border-radius: 2rem;
+    margin: 3rem;
+}
+
+input{
+    height: 1.5rem;
+    width: 200px;
+    border: 2px solid brown;
+    border-radius: 2rem;
+    margin: auto;
+}
+
+
+#out{
+    font-size: large;
+}
+
+
+
+footer{
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.links{
+    display: inline;
+}
+
+img{
+    width: 40px;
+    padding: 0.2rem;
+}

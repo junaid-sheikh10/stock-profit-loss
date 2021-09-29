@@ -29,11 +29,14 @@ function profitloss(tinput, toutput) {
   if (toutput > tinput) {
     var pr = toutput - tinput;
      ans = (pr * 100) / tinput;
-     var message="profit of "+ans+"%"
-  } else {
+     var message="Hey you got profit of "+pr+" & percent profit is "+ans+"% 🤑"
+  } else if(tinput>toutput){
     var ls = tinput - toutput;
      ans = (ls * 100) / tinput;
-     var message="loss of "+ans+"%"
+     var message="Hey you got a loss of "+ls+" & percent loss of "+ans+"%😥"
+  }
+  else{
+    var message="No profit no loss"
   }
   printoutput(message);
 }
