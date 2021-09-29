@@ -10,11 +10,10 @@ submit.addEventListener("click", submitHandler);
 
 function submitHandler() {
   console.log("clicked");
- // var ip = Number(initialp.value);
- // var qty = Number(squantity.value);
- // var cur = Number(currentp.value);
-
- // calculate(ip, qty, cur);
+  var ip = Number(initialp.value);
+  var qty = Number(squantity.value);
+  var cur = Number(currentp.value)
+  calculate(ip, qty, cur);
 }
 function calculate(i, q, c) {
   var totalin = i * q;
