@@ -13,7 +13,13 @@ function submitHandler() {
   var ip = Number(initialp.value);
   var qty = Number(squantity.value);
   var cur = Number(currentp.value)
-  calculate(ip, qty, cur);
+  if(ip>0 && qty>0 && cur>0){
+    calculate(ip, qty, cur);
+  }
+  else{
+    var ipmessage="Entered values should be greater than zero";
+    printoutput(ipmessage);
+  }
 }
 function calculate(i, q, c) {
   var totalin = i * q;
